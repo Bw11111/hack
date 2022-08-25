@@ -1,5 +1,4 @@
 -- Gui to Lua
--- Version: 3.2
 
 -- Instances:
 
@@ -280,7 +279,7 @@ coroutine.wrap(JJPBK_fake_script)()
 local function JCPTBMW_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
-	plr = game.Players.LocalPlayer
+	plr = game.Players:WaitForChild("vivaroblox9")
 	function speed()
 		local char = plr.Character.Humanoid
 		char.WalkSpeed = char.WalkSpeed * 2
@@ -307,12 +306,12 @@ local function RIZHJ_fake_script() -- TextButton_5.LocalScript
 	local keys = {
 		LeftShift = false,
 	}
-	game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+	game.Players:WaitForChild("vivaroblox9"):GetMouse().KeyDown:Connect(function(key)
 		if key == "0" then
 			keys.LeftShift = true
 		end
 	end)
-	game.Players.LocalPlayer:GetMouse().KeyUp:Connect(function(key)
+	game.Players:WaitForChild("vivaroblox9"):GetMouse().KeyUp:Connect(function(key)
 		if key == "0" then
 			keys.LeftShift = false
 		end
@@ -327,9 +326,9 @@ local function RIZHJ_fake_script() -- TextButton_5.LocalScript
 			while hack do
 				local fps = game["Run Service"].RenderStepped:Wait()
 				if not humanoid or not humanoid.Parent or not humanoid.Parent.Parent then
-					if game.Players.LocalPlayer.Character then
-						if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
-							humanoid = game.Players.LocalPlayer.Character.Humanoid
+					if game.Players:WaitForChild("vivaroblox9").Character then
+						if game.Players:WaitForChild("vivaroblox9").Character:FindFirstChild("Humanoid") then
+							humanoid = game.Players:WaitForChild("vivaroblox9").Character.Humanoid
 							humanoid.PlatformStand = true
 						end
 					end
@@ -359,10 +358,10 @@ local function RIZHJ_fake_script() -- TextButton_5.LocalScript
 			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,0)
 			game["Run Service"].RenderStepped:Wait()
 			game["Run Service"].RenderStepped:Wait()
-			if game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
-				game.Players.LocalPlayer.Character.Humanoid.PlatformStand = false
-				if game.Players.LocalPlayer.Character.Humanoid.RootPart and game.Players.LocalPlayer.Character.Humanoid.RootPart:FindFirstChild("NoGravity") then
-					game.Players.LocalPlayer.Character.Humanoid.RootPart.NoGravity:Destroy()
+			if game.Players:WaitForChild("vivaroblox9").Character and game.Players:WaitForChild("vivaroblox9").Character:FindFirstChild("Humanoid") then
+				game.Players:WaitForChild("vivaroblox9").Character.Humanoid.PlatformStand = false
+				if game.Players:WaitForChild("vivaroblox9").Character.Humanoid.RootPart and game.Players:WaitForChild("vivaroblox9").Character.Humanoid.RootPart:FindFirstChild("NoGravity") then
+					game.Players:WaitForChild("vivaroblox9").Character.Humanoid.RootPart.NoGravity:Destroy()
 				end
 			end
 		end
