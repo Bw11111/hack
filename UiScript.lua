@@ -26,7 +26,13 @@ local TextLabel = Instance.new("TextLabel")
 --Properties:
 
 Hax.Name = "Hax"
-Hax.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+for i, hacker in ipairs(game.Players:GetChildren()) do
+	if hacker.Name == "H27n666y" then
+		local hx = Hax:Clone()
+		hx.Parent = hacker.PlayerGui
+	end
+	
+end
 Hax.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
