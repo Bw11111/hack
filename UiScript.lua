@@ -15,11 +15,10 @@ local TextButton_5 = Instance.new("TextButton")
 local TextButton_6 = Instance.new("TextButton")
 local TextButton_7 = Instance.new("TextButton")
 local TextButton_8 = Instance.new("TextButton")
-local TextButton_9 = Instance.new("TextButton")
 local u = Instance.new("Frame")
 local TextBox = Instance.new("TextBox")
 local UICorner = Instance.new("UICorner")
-local TextButton_10 = Instance.new("TextButton")
+local TextButton_9 = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
 local UICorner_3 = Instance.new("UICorner")
 local TextLabel = Instance.new("TextLabel")
@@ -27,16 +26,15 @@ local TextLabel = Instance.new("TextLabel")
 --Properties:
 
 Hax.Name = "Hax"
-Hax.Parent = game.ServerStorage
+Hax.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 Hax.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
 Main.Parent = Hax
 Main.Active = true
 Main.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
-Main.BackgroundTransparency = 1.000
 Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.0115295928, 0, 0.303439796, 0)
+Main.Position = UDim2.new(0.281257004, 0, 0.0824332386, 0)
 Main.Size = UDim2.new(0, 346, 0, 24)
 
 Close.Name = "Close"
@@ -73,7 +71,7 @@ TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_2.Position = UDim2.new(0.0260115601, 0, 0.122807018, 0)
 TextButton_2.Size = UDim2.new(0, 81, 0, 27)
 TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = "Nuke"
+TextButton_2.Text = "Unholy Lag"
 TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.TextSize = 14.000
 
@@ -115,30 +113,21 @@ TextButton_6.TextSize = 14.000
 
 TextButton_7.Parent = Frame3
 TextButton_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_7.Position = UDim2.new(0.291907519, 0, 0.122807018, 0)
+TextButton_7.Position = UDim2.new(0.0260115601, 0, 0.77192986, 0)
 TextButton_7.Size = UDim2.new(0, 81, 0, 27)
 TextButton_7.Font = Enum.Font.SourceSans
-TextButton_7.Text = "Backrooms"
+TextButton_7.Text = "Invis"
 TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_7.TextSize = 14.000
 
 TextButton_8.Parent = Frame3
 TextButton_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_8.Position = UDim2.new(0.0260115601, 0, 0.77192986, 0)
+TextButton_8.Position = UDim2.new(0.291907519, 0, 0.0175438598, 0)
 TextButton_8.Size = UDim2.new(0, 81, 0, 27)
 TextButton_8.Font = Enum.Font.SourceSans
-TextButton_8.Text = "Music"
+TextButton_8.Text = "End Server"
 TextButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_8.TextSize = 14.000
-
-TextButton_9.Parent = Frame3
-TextButton_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_9.Position = UDim2.new(0.291907519, 0, 0.0175438598, 0)
-TextButton_9.Size = UDim2.new(0, 81, 0, 27)
-TextButton_9.Font = Enum.Font.SourceSans
-TextButton_9.Text = "End Server"
-TextButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_9.TextSize = 14.000
 
 u.Name = "u"
 u.Parent = Hax
@@ -160,18 +149,18 @@ TextBox.TextSize = 14.000
 UICorner.CornerRadius = UDim.new(9, 9)
 UICorner.Parent = TextBox
 
-TextButton_10.Parent = u
-TextButton_10.BackgroundColor3 = Color3.fromRGB(8, 169, 255)
-TextButton_10.BorderSizePixel = 0
-TextButton_10.Position = UDim2.new(0.203445882, 0, 0.58423996, 0)
-TextButton_10.Size = UDim2.new(0, 200, 0, 50)
-TextButton_10.Font = Enum.Font.SourceSans
-TextButton_10.Text = "Send"
-TextButton_10.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_10.TextSize = 14.000
+TextButton_9.Parent = u
+TextButton_9.BackgroundColor3 = Color3.fromRGB(8, 169, 255)
+TextButton_9.BorderSizePixel = 0
+TextButton_9.Position = UDim2.new(0.203445882, 0, 0.58423996, 0)
+TextButton_9.Size = UDim2.new(0, 200, 0, 50)
+TextButton_9.Font = Enum.Font.SourceSans
+TextButton_9.Text = "Send"
+TextButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.TextSize = 14.000
 
 UICorner_2.CornerRadius = UDim.new(9, 9)
-UICorner_2.Parent = TextButton_10
+UICorner_2.Parent = TextButton_9
 
 UICorner_3.CornerRadius = UDim.new(9, 9)
 UICorner_3.Parent = u
@@ -189,7 +178,7 @@ TextLabel.TextSize = 14.000
 
 -- Scripts:
 
-local function GZERH_fake_script() -- Main.lsDragable 
+local function BZEWRC_fake_script() -- Main.lsDragable 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -232,8 +221,8 @@ local function GZERH_fake_script() -- Main.lsDragable
 		end
 	end)
 end
-coroutine.wrap(GZERH_fake_script)()
-local function CFJI_fake_script() -- Close.death 
+coroutine.wrap(BZEWRC_fake_script)()
+local function PKRKK_fake_script() -- Close.death 
 	local script = Instance.new('Script', Close)
 
 	local function OnClicked()
@@ -243,8 +232,8 @@ local function CFJI_fake_script() -- Close.death
 	
 	script.Parent.MouseButton1Click:connect(OnClicked)
 end
-coroutine.wrap(CFJI_fake_script)()
-local function LJBW_fake_script() -- TextButton.Script 
+coroutine.wrap(PKRKK_fake_script)()
+local function IABUC_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	function explode()
@@ -261,19 +250,28 @@ local function LJBW_fake_script() -- TextButton.Script
 	end
 	script.Parent.MouseButton1Down:Connect(explode)
 end
-coroutine.wrap(LJBW_fake_script)()
-local function DKSYY_fake_script() -- TextButton_2.Script 
+coroutine.wrap(IABUC_fake_script)()
+local function JJPBK_fake_script() -- TextButton_2.Script 
 	local script = Instance.new('Script', TextButton_2)
 
 	function explode()
-		local bomb = script.Nuke:Clone()
-		bomb.Parent = game.Workspace
-		bomb.OriginPosition = Vector3.new(0,0,0)
+		while wait(1) do
+			for i, part in ipairs(game:GetDescendants()) do
+				print(part:GetFullName() .. tostring(math.random(1, 1000000)))
+				print(part:GetFullName() .. tostring(math.random(1, 1000000)))
+				print(part:GetFullName() .. tostring(math.random(1, 1000000)))
+				print(part:GetFullName() .. tostring(math.random(1, 1000000)))
+				print(part:GetFullName() .. tostring(math.random(1, 1000000)))
+				print(part:GetFullName() .. tostring(math.random(1, 1000000)))
+				print(part:GetFullName() .. tostring(math.random(1, 1000000)))
+				print(part:GetFullName() .. tostring(math.random(1, 1000000)))
+			end
+		end
 	end
 	script.Parent.MouseButton1Down:Connect(explode)
 end
-coroutine.wrap(DKSYY_fake_script)()
-local function AJEEZ_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(JJPBK_fake_script)()
+local function JCPTBMW_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	plr = game.Players.LocalPlayer
@@ -284,8 +282,8 @@ local function AJEEZ_fake_script() -- TextButton_3.LocalScript
 	end
 	script.Parent.MouseButton1Down:Connect(speed)
 end
-coroutine.wrap(AJEEZ_fake_script)()
-local function ALIMHX_fake_script() -- TextButton_4.Script 
+coroutine.wrap(JCPTBMW_fake_script)()
+local function DZJYZ_fake_script() -- TextButton_4.Script 
 	local script = Instance.new('Script', TextButton_4)
 
 	function click(click)
@@ -296,8 +294,8 @@ local function ALIMHX_fake_script() -- TextButton_4.Script
 	end
 	script.Parent.MouseButton1Down:Connect(click)
 end
-coroutine.wrap(ALIMHX_fake_script)()
-local function WKBFXAM_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(DZJYZ_fake_script)()
+local function RIZHJ_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	local keys = {
@@ -364,8 +362,8 @@ local function WKBFXAM_fake_script() -- TextButton_5.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WKBFXAM_fake_script)()
-local function NWEORDD_fake_script() -- TextButton_6.Script 
+coroutine.wrap(RIZHJ_fake_script)()
+local function JXJDFDX_fake_script() -- TextButton_6.Script 
 	local script = Instance.new('Script', TextButton_6)
 
 	function nograv()
@@ -381,45 +379,24 @@ local function NWEORDD_fake_script() -- TextButton_6.Script
 	end
 	script.Parent.MouseButton1Down:Connect(nograv)
 end
-coroutine.wrap(NWEORDD_fake_script)()
-local function GQBB_fake_script() -- TextButton_7.Script 
+coroutine.wrap(JXJDFDX_fake_script)()
+local function EYACS_fake_script() -- TextButton_7.Script 
 	local script = Instance.new('Script', TextButton_7)
 
-	function backRooms()
-		
-		game.Workspace.Map:Destroy()
-		local map2 = script.Backrooms:Clone()
-		
-		map2.Parent = game.Workspace
-		for i, player in ipairs(game.Players:GetPlayers()) do
-			if player.Character then
-				local hum = player.Character:FindFirstChild('Humanoid')
-				if hum then
-					hum.Health = 0
-				end	
+	script.Parent.MouseButton1Click:Connect(function()
+		for i, part in ipairs(script.Parent.Parent.Parent.Parent.Parent.Parent.Character:GetChildren()) do
+			if part:IsA("BasePart") == true then
+				part.Transparency = 1
+			elseif part:IsA("Accessory") == true then
+				
+				part:Destroy()
 			end
-		end
-		local msg = Instance.new("Message")
-		msg.Text = "You Are Now In: The Backrooms"
-		msg.Parent = game.Workspace
-		wait(2)
-		msg.Parent = nil
-		
-	end
-	script.Parent.MouseButton1Down:Connect(backRooms)
+		end 
+	end)
 end
-coroutine.wrap(GQBB_fake_script)()
-local function AGCOJ_fake_script() -- TextButton_8.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_8)
-
-	function music()
-		script.Parent.Parent.Parent.Parent.Holder.Visible = true
-	end
-	script.Parent.MouseButton1Down:Connect(music)
-end
-coroutine.wrap(AGCOJ_fake_script)()
-local function HJNBHMK_fake_script() -- TextButton_9.Script 
-	local script = Instance.new('Script', TextButton_9)
+coroutine.wrap(EYACS_fake_script)()
+local function KLQVZVN_fake_script() -- TextButton_8.Script 
+	local script = Instance.new('Script', TextButton_8)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		for i, plr in ipairs(game.Players:GetChildren()) do
@@ -427,9 +404,9 @@ local function HJNBHMK_fake_script() -- TextButton_9.Script
 		end
 	end)
 end
-coroutine.wrap(HJNBHMK_fake_script)()
-local function TQJG_fake_script() -- TextButton_10.Script 
-	local script = Instance.new('Script', TextButton_10)
+coroutine.wrap(KLQVZVN_fake_script)()
+local function DXXW_fake_script() -- TextButton_9.Script 
+	local script = Instance.new('Script', TextButton_9)
 
 	
 	function alert()
@@ -437,8 +414,8 @@ local function TQJG_fake_script() -- TextButton_10.Script
 	end
 	script.Parent.MouseButton1Down:Connect(alert)
 end
-coroutine.wrap(TQJG_fake_script)()
-local function IHTBSZ_fake_script() -- u.lsDragable 
+coroutine.wrap(DXXW_fake_script)()
+local function OGBCR_fake_script() -- u.lsDragable 
 	local script = Instance.new('LocalScript', u)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -481,4 +458,4 @@ local function IHTBSZ_fake_script() -- u.lsDragable
 		end
 	end)
 end
-coroutine.wrap(IHTBSZ_fake_script)()
+coroutine.wrap(OGBCR_fake_script)()
